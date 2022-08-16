@@ -1,0 +1,7 @@
+---
+Name: silverstripe-bootstrap-5-forms
+---
+
+SilverStripe\Forms\FormField:
+  extensions:
+    - BiffBangPow\SilverstripeBootstrap5Forms\Extensions\BBPFormFieldExtension

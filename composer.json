@@ -1,0 +1,20 @@
+{
+    "name": "biffbangpow/silverstripe-bootstrap-5-forms",
+    "description": "Adds templates for bootstrap 5 forms",
+    "keywords": ["silverstripe"],
+    "type": "silverstripe-vendormodule",
+    "license": "proprietary",
+    "authors": [
+        {"name": "James Heathcote","email": "james.h@biffbangpow.com"}
+    ],
+    "require": {
+        "silverstripe/cms": "^4",
+        "silverstripe/framework": "^4",
+        "silverstripe/admin": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "BiffBangPow\\SilverstripeBootstrap5Forms\\": "src/"
+        }
+    }
+}
