@@ -15,6 +15,7 @@ use SilverStripe\Forms\LabelField;
 use SilverStripe\Forms\ListboxField;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\Forms\TextField;
+use BiffBangPow\SilverstripeBootstrap5Forms\Bootstrap5Forms;
 
 class BBPFormFieldExtension extends Extension
 {
@@ -55,10 +56,10 @@ class BBPFormFieldExtension extends Extension
         } elseif ($form_field instanceof $formAction) {
             if ($form_field->getAttribute('type') == 'submit') {
                 // todo make configurable
-                $form_field->addExtraClass('btn btn-primary');
+                $form_field->addExtraClass(Bootstrap5Forms::config()->get('submit_button_class'));
             } else {
                 // todo make configurable
-                $form_field->addExtraClass('btn btn-default btn-secondary');
+                $form_field->addExtraClass(Bootstrap5Forms::config()->get('non_submit_button_class'));
             }
         }
     }
