@@ -74,4 +74,18 @@ class BBPFormFieldExtension extends Extension
         }
         return false;
     }
+
+    public function getHolderClass() {
+        if ($this->getFloatingLabels()) {
+            return Bootstrap5Forms::config()->get('floating_labels_class');
+        }
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getFloatingLabels() {
+        return Bootstrap5Forms::config()->get('enable_floating_labels');
+    }
+
 }
