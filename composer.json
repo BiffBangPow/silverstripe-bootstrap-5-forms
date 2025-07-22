@@ -8,7 +8,7 @@
         {"name": "James Heathcote","email": "james.h@biffbangpow.com"}
     ],
     "require": {
-        "silverstripe/cms": "^4|^5"
+        "silverstripe/cms": "^6"
     },
     "autoload": {
         "psr-4": {
