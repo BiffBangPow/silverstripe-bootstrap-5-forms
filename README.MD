@@ -7,7 +7,7 @@ Works with CMS 6, for CMS 4/5 please use the version 1 branch
 
 ## Usage
 
-`composer require biffbangpow/silverstripe-bootstrap5-forms ^2`
+`composer require biffbangpow/silverstripe-bootstrap-5-forms ^2`
 
 Run a `dev/build` and the module should activate automatically on all front-end forms.
 
